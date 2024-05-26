@@ -3,7 +3,7 @@ class Dish {
     this.name = name;
     this.type = type;
     }
-    
+    // explains dishes name and type of dish
     describe() {
     return `${this.name} is a ${this.type} dish`;
     }
@@ -13,7 +13,7 @@ class Dish {
     this.name = name;
     this.dishes = [];
     }
-    
+    //adds dish to dishes array
     addDish(dish) {
     if (dish instanceof Dish) {
     this.dishes.push(dish);
@@ -22,11 +22,12 @@ class Dish {
     argument is not a dish: ${dish}`);
     }
     }
-    
+    //describes ammount of dishes to the courses
     describe() {
     return `${this.name} has ${this.dishes.length} dishes.`;
     }
     }
+    
     class Menu {
         constructor() {
             this.courses = [];
